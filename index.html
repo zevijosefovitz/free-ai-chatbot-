@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Multi-AI Chatbot</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Free Multi-AI Chatbot</h1>
+            <div class="model-selector">
+                <select id="modelSelect">
+                    <option value="gemini">Google Gemini</option>
+                    <option value="qwen">Qwen</option>
+                    <option value="claude">Claude (via OpenRouter)</option>
+                    <option value="llama">Llama (via OpenRouter)</option>
+                </select>
+                <button id="autoSelect">Auto-Select Best Model</button>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div id="chatMessages" class="chat-messages"></div>
+            <div class="input-area">
+                <textarea id="messageInput" placeholder="Type your message here..." rows="3"></textarea>
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <span id="currentModel">Current: Gemini</span>
+            <span id="apiStatus">API: Ready</span>
+        </div>
+    </div>
+
+    <script src="config/config.js"></script>
+    <script src="scripts/apiHandlers.js"></script>
+    <script src="scripts/modelManager.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
