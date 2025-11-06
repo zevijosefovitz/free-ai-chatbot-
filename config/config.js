@@ -1,3 +1,5 @@
+console.log("✅ config.js loaded!");
+
 const CONFIG = {
     APIs: {
         qwen: {
@@ -6,7 +8,7 @@ const CONFIG = {
             model: "qwen/qwen-2.5-72b-instruct:free",
             free: true,
             available: true,
-            description: "Best for general questions, reasoning, and complex tasks"
+            description: "Best for general questions and reasoning"
         },
         mixtral: {
             name: "Mixtral 8x7B - SMART",
@@ -14,7 +16,7 @@ const CONFIG = {
             model: "mistralai/mixtral-8x7b-instruct:free",
             free: true,
             available: true,
-            description: "Excellent for creative writing and analysis"
+            description: "Excellent for creative writing"
         },
         llama: {
             name: "Llama 3.1 (8B) - FAST",
@@ -22,7 +24,7 @@ const CONFIG = {
             model: "meta-llama/llama-3.1-8b-instruct:free",
             free: true,
             available: true,
-            description: "Quick responses, good for everyday questions"
+            description: "Quick responses for everyday questions"
         },
         codellama: {
             name: "Code Llama (34B) - PROGRAMMING",
@@ -30,7 +32,7 @@ const CONFIG = {
             model: "codellama/codellama-34b-instruct:free",
             free: true,
             available: true,
-            description: "Specialized for coding and technical questions"
+            description: "Specialized for coding questions"
         }
     },
 
