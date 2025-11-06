@@ -9,29 +9,47 @@
 <body>
     <div class="container">
         <header>
-            <h1>🤖 Free Multi-AI Chatbot</h1>
+            <div class="header-content">
+                <h1>🧠 AI ChatHub</h1>
+                <p class="tagline">Switch between powerful AI models - 100% Free!</p>
+            </div>
             <div class="model-selector">
-                <select id="modelSelect">
-                    <option value="gemini">Google Gemini</option>
-                    <option value="qwen">Qwen</option>
-                    <option value="claude">Claude (via OpenRouter)</option>
-                    <option value="llama">Llama (via OpenRouter)</option>
-                </select>
-                <button id="autoSelect">Auto-Select Best Model</button>
+                <div class="selector-group">
+                    <label for="modelSelect">Choose AI Model:</label>
+                    <select id="modelSelect">
+                        <option value="qwen">🤖 Qwen 2.5 (72B) - Most Powerful</option>
+                        <option value="mixtral">🎨 Mixtral 8x7B - Creative Expert</option>
+                        <option value="llama">⚡ Llama 3.1 (8B) - Fast & Efficient</option>
+                        <option value="codellama">💻 Code Llama (34B) - Programming Specialist</option>
+                    </select>
+                </div>
+                <button id="autoSelect" class="auto-btn">🎯 Auto-Select Best Model</button>
             </div>
         </header>
 
         <div class="chat-container">
-            <div id="chatMessages" class="chat-messages"></div>
+            <div id="chatMessages" class="chat-messages">
+                <div class="welcome-message">
+                    <h3>Welcome to AI ChatHub! 🚀</h3>
+                    <p>I'm your free multi-AI assistant. Choose a model above or let me auto-select the best one for your question!</p>
+                    <div class="model-tips">
+                        <div class="tip">💡 <strong>Pro Tip:</strong> Use Auto-Select for the best results!</div>
+                    </div>
+                </div>
+            </div>
             <div class="input-area">
-                <textarea id="messageInput" placeholder="Type your message here..." rows="3"></textarea>
-                <button id="sendButton">Send</button>
+                <textarea id="messageInput" placeholder="Ask me anything... (Press Enter to send, Shift+Enter for new line)" rows="3"></textarea>
+                <button id="sendButton" class="send-btn">
+                    <span class="btn-text">Send</span>
+                    <span class="btn-icon">📤</span>
+                </button>
             </div>
         </div>
 
         <div class="status-bar">
-            <span id="currentModel">Current: Gemini</span>
-            <span id="apiStatus">API: Ready</span>
+            <span id="currentModel">Ready: Qwen 2.5 (72B)</span>
+            <span id="apiStatus">Status: Online ✅</span>
+            <span class="free-badge">100% Free Forever</span>
         </div>
     </div>
 
